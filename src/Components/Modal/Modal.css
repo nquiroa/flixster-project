@@ -88,13 +88,20 @@
     }
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 0 20px 40px 20px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .modal-header button {
+        font-size: 2em;
+    }
+
+    .movie-details h2 {
+        font-size: 1.5em;
+    }
+
+    .movie-details p {
+        font-size: 1em;
     }
 }

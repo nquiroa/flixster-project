@@ -26,3 +26,15 @@
     color: #fff;
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .searchbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .searchbar input, .searchbar button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

@@ -31,3 +31,19 @@
     margin: 10px;
     color: #777;
 }
+
+@media (max-width: 768px) {
+    .movie-card {
+        width: 100%;
+    }
+
+    .movie-card h2 {
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    .movie-card p {
+        font-size: 0.9em;
+        margin: 5px;
+    }
+}
