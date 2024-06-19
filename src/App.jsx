@@ -20,21 +20,21 @@ const App = () => {
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     setPage(1);
-    setResetMovies(true);
+    setResetMovies(true); 
     setIsSearch(true);
   };
 
   const handleSearchClick = () => {
+    setPage(1);
     setIsSearch(true);
     setsearchQuery('');
-    setPage(1);
     setResetMovies(true);
   };
 
   const handleNowPlaying = () => {
+    setPage(1);
     setIsSearch(false);
     setsearchQuery('');
-    setPage(1);
     setResetMovies(true);
   };
 
@@ -44,12 +44,20 @@ const App = () => {
     setResetMovies(true);
   };
 
+  const handlePageChange = (event) => {
+    const newPage = parseInt(event.target.value, 10);
+    if (!isNaN(newPage) && newPage > 0) {
+      setPage(newPage);
+      setResetMovies(true);
+    }
+  };
+
   useEffect(() => {
     const fetchGenres = async () => {
       const url = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`;
-      const res = await fetch(url);
-      const data = await res.json();
-      setGenres(data.genres);
+        const res = await fetch(url);
+        const data = await res.json();
+        setGenres(data.genres);
     };
 
     fetchGenres();
@@ -70,6 +78,14 @@ const App = () => {
               <option key={genre.id} value={genre.id}>{genre.name}</option>
             ))}
           </select>
+          <label htmlFor="page-input">Page: </label>
+          <input 
+            type="number" 
+            id="page-input" 
+            value={page} 
+            onChange={handlePageChange} 
+            min="1"
+          />
         </div>
         {isSearch && (
           <Searchbar
