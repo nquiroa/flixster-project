@@ -48,11 +48,11 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 ### Walkthrough Video
 
 <div>
-    <a href="https://www.loom.com/share/54d67dafba4a491cb89e28be99f07029">
-      <p>Loom Message - 19 June 2024 - Watch Video</p>
+    <a href="https://www.loom.com/share/3e8acc8dc4c3442ca34a17ceb0f3ea78">
+      <p>Loom Message - 20 June 2024 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/54d67dafba4a491cb89e28be99f07029">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/54d67dafba4a491cb89e28be99f07029-with-play.gif">
+    <a href="https://www.loom.com/share/3e8acc8dc4c3442ca34a17ceb0f3ea78">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/3e8acc8dc4c3442ca34a17ceb0f3ea78-with-play.gif">
     </a>
   </div>
 ### Reflection
