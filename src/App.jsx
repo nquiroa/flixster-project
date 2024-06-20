@@ -106,6 +106,7 @@ const App = () => {
       </main>
       <footer>
           <p>&copy;Flixster</p>
+          <p>&copy;Nathan Quiroa's Project and Copyright</p>
       </footer>
     </div>
   );

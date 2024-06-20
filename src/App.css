@@ -35,6 +35,7 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
     letter-spacing: 0.05em;
+    font-family: 'Lobster', cursive;
 }
 
 .controls {
@@ -63,6 +64,7 @@ header h1 {
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
     backdrop-filter: blur(10px);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .controls button:hover, .controls select:hover, .controls input:hover {
